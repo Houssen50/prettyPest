@@ -1,0 +1,696 @@
+/*-------------------١--------------------------*/
+/*                  ملحوظات                     */
+/*
+ملحوظة عامة:لقد  تركت لكم تعليقات لتساعدك علي تنظيم الملف بالشكل المثالي
+تأكد من أن آخر جزء هو الجزء الحاوي لكل ما هو متعلق بشكل الصفحة على الهواتف والتابلت
+إذا كان لديك أي سؤال من فضلك إرسل لي الكود وشرح المشكلة علي البريد الالكتروني
+tony@barmej.com
+*/
+/*----------------------------------------------*/
+
+
+
+/*----------------------١-----------------------*/
+/*
+Fonts & Font-faces سنقوم بوضع جميع الخطوط التي سنحتاجها هنا
+ملحوظة: إسم الخط هو إما
+Avenir Next 
+أو إن لم تجده فيمكنك استعمال خط 
+Lato
+*/
+/*---------------------------------------------*/
+
+
+/*----------------------٢-----------------------*/
+/*                  DEFAULTS                    */
+/*
+يجب عليك هنا وضع أي من الأنماط العامة الخاصة بوسوم مثل
+html, body, h1, h2, p 
+وهي الأنماط التي تنطبق على الموقع بشكل عام وكل صفحاته وليس على عنصر معين في صفحة معينة
+*/
+/*----------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*----------------------٣-----------------------*/
+/*               HELPER CLASSES                 */
+/*
+يجب عليك هنا وضع أي من الأنماط الخاصة بال
+classes
+التي ستقوم بإعادة إستخدامها في أكثر من مكان خلال عملك على الموقع 
+على سبيل المثال: النمط الخاص بالزر الأزرق الذي يستعمله المصمم في كل الصفحات تقريباً
+*/
+/*----------------------------------------------*/
+
+
+/*----------------------٤-----------------------*/
+/*                    LAYOUT                    */
+/*                البناء العام للصفحة           */
+/*----------------------------------------------*/
+
+
+
+/*----------------------٥-----------------------*/
+/*                    HEADER                    */
+
+header{
+    position: relative;
+    margin-bottom: 82px;
+}
+header img{
+    margin: 54px 9px 16px 26px;
+}
+
+
+/*----------------------٦-----------------------*/
+/*                     HERO                     */
+
+
+.hero__desc{
+    margin-left: 106px;
+    margin-top: 63px;
+}
+.hero__image img{
+    width: 100%;
+}
+nav.main-nav {
+    display: flex;
+    justify-content: end;
+    margin-top: -54px
+}
+
+.main-nav ul{
+    list-style: none;
+}
+.main-nav ul li {
+ display: inline-block;
+ padding: 10px 25px;
+ margin-top: 2px;
+}
+
+nav.main-nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.burger{
+    position: relative;
+}
+.burger span{
+    display: none;
+    /* display: block; */
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    transition: backgrund-color 0.5s;
+  }
+  
+  .burger span::before{
+    content: '';
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -5px;
+  }
+  
+  
+  
+  .burger span::after{
+    content: '';
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+  }
+  
+.dorw{
+    margin: 50px 0;
+    display: none;
+    background-color: black;
+    color: white;
+
+}
+.dorw a{
+    text-decoration: none;
+    color: white;
+}
+.qq{
+    margin-top: 51px;
+    display: inline-block;
+}
+.burger div {
+    display: block;
+    margin-left: 252px;
+    margin-top: 8px;
+}
+.button {
+    text-decoration: none;
+    margin-left: 155px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    padding: 20px 50px;
+}
+
+.hero__desc h1{
+    line-height: 1.2;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.hero__desc p {
+    font-size: 25px;
+    margin-bottom: 62px;
+    }
+    
+    .container1{
+    display: flex;
+}
+
+.hero__image  {
+    margin-top: -7px;
+}
+
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+
+
+
+
+/*----------------------٧-----------------------*/
+/*              MEET YOUR MATCH                 */
+.meetYourMatch{
+    background-color: lavender;
+    margin-top: 181px;
+    text-align: center;
+    height: 800px;
+}
+
+
+.switcher input{
+    display: none;
+}
+
+.switcher img{
+    border: 2px solid antiquewhite;
+    border-radius: 38px;
+    background-color: wheat;
+    margin: 0 20px;
+}
+.meetYourMatchــcontent h2 {
+    margin: 100px 0;
+    display: inline-block;
+}
+
+.switcher{
+    margin-top: -69px;
+    margin-left: 19px;
+}
+
+.switcher span{
+    margin: 25px 0px 1px -12px;
+    position: absolute;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.form-group input {
+    padding: 14px;
+    border: 1px solid #4682B4;
+    border-radius: 39px;
+    margin-left: -44px;
+    margin-top: 22px;
+    width: 307px;
+    position: relative;
+    height: 56px;
+}
+
+.form-group button {
+    margin-left: -37px;
+    position: absolute;
+    margin-top: 20px;
+}
+.widgets.is-searchResults {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 70px;
+    flex-shrink: inherit;
+}
+.meetYourMatch .widget__desc{
+    background-color: white;
+    margin-top: -24px;
+}
+
+.meetYourMatch .widget__desc h4 {
+    margin: 8px 0;
+}
+.meetYourMatch .widget__desc p {
+    margin: 14px 0;
+}
+
+/*----------------------------------------------*/
+
+
+
+/*----------------------٨-----------------------*/
+/*               HOW IT WORKS                   */
+section.howItWorks{
+    text-align: center;
+    margin: 0;
+    background-color: azure;
+    padding-bottom: 65px;
+}
+
+.widgets.is-howItWorks{
+    display: flex;
+    margin: 40px 65px;
+}
+.widget__image{
+    margin-bottom: 20px;
+}
+
+.howItWorks .widget__desc h3 {
+    margin: 21px 0;
+    text-transform: uppercase;
+}
+.howItWorks .widget__desc p {
+    color: gray;
+    width: 70%;
+    margin-left: 64px;
+}
+.howItWorks h2 {
+    display: inline-block;
+    margin-top: 99px;
+}
+/*----------------------------------------------*/
+
+
+
+/*----------------------٩-----------------------*/
+/*                 STORIES                      */
+.stories{
+    text-align: center;
+    margin-top: -39px;
+    background-color: antiquewhite;
+    height: 800px;
+}
+
+.stories h2 {
+    margin-bottom: 39px;
+    margin-top: 68px;
+    display: inline-block;
+}
+.stories p {
+    /* margin-top: -20px; */
+    color: gray;
+}
+.stories .widgets{
+
+  display: flex;
+  margin: 58px 57px 51px 76px;
+  justify-content: space-between;
+}
+.stories .widget__desc{
+    background-color: white;
+    margin-top: -24px;
+    padding-bottom: 16px;
+    padding-top: 17px;
+}
+.stories .widget__desc h3 {
+    text-transform: uppercase;
+}
+
+.stories .widget__desc a{
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: inherit;
+
+}
+/*----------------------------------------------*/
+
+
+
+/*----------------------١٠----------------------*/
+/*       Actions: Change A Life, Adopt A Pet    */
+.actions{
+    margin-bottom: 211px;
+    text-align: center;
+    margin-top: 1px;
+    background-color: blue;
+    height: 314px;
+}
+.actions h2 {
+    margin-bottom: 57px;
+    color: white;
+    padding-top: 87px;
+    padding-left: 55px;
+    text-transform: uppercase;
+}
+.actions .button {
+    text-decoration: none;
+    margin-left: 55px;
+    background-color: white;
+    color: blue;
+    border-radius: 30px;
+    padding: 20px 50px;
+}
+.is-outline{
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 20px 51px;
+    border-radius: 89px;
+    margin-left: 41px;
+    color: white;
+}
+/*----------------------------------------------*/
+
+
+
+/*---------------------١١-----------------------*/
+/*                    FOOTER                    */
+footer{
+    margin-top: -15px;
+    height: 280px;
+
+}
+.copyrights{
+    margin: 112px 55px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: -172px 258px;
+    margin-right: 84px;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.item h5 {
+    display: inline-block;
+    text-align: -webkit-auto;
+    margin-top: -28px;
+    margin-right: -69px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.item ul{
+    list-style: none;
+}
+.item ul li a {
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 4px;
+    display: block;
+    margin-left: -2px;
+}
+.copyrights p a{
+    text-decoration: none;
+    color: gray;
+}
+/*----------------------------------------------*/
+
+
+
+/*----------------------١٢----------------------*/
+/*                    Responsive                */
+/*       كل ما هو متعلق بالهواتف والتابلت       */
+
+ @media (min-width:320px)and (max-width:552px){
+header img{
+    margin: 16px 18px;
+    }
+    .is-visible-mobile span{
+    display: block;
+    margin: -39px 279px;
+}
+nav.main-nav {
+    display: none;
+    margin-top: 49px;
+    margin-left: 232px;
+}
+.burger:hover .dorw{
+    display: block;
+}
+.hero__desc h1{
+    font-size: 20px;
+}
+.hero__desc p{
+    font-size: 15px;
+    width: 75%;
+}
+.hero__image img{
+    
+    width: 291px;
+    margin-top: 30px;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero__desc .button {
+    margin-left: -13px;
+}
+
+.form-group input{
+    width: 193px;
+    margin-left: -104px;
+}
+.form-group .button {
+    width: 133px;
+}
+.widgets.is-searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 21px 40px;
+}
+.howItWorks h2{
+    margin-right: 17px;
+    margin-top: 1126px;
+}
+.widgets.is-howItWorks{
+    display: flex;
+    flex-wrap: wrap;
+}
+.howItWorks .widget__desc p {
+    /* color: gray;
+    width: 70%; */
+    margin-left: 35px;
+    margin-bottom: 47px;
+}
+.hero__desc {
+    margin: 0 16px;
+    width: 100%;
+}
+.stories .widgets{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px -38px;
+}
+.stories .widgets .widget__image img{
+    width: 227px;
+    margin-left: 76px;
+}
+.stories .widget__desc {
+    background-color: white;
+    margin-top: -21px;
+    padding-bottom: 14px;
+    padding-top: 3px;
+    margin-left: 81px;
+    width: 225px;
+}
+.widget{
+    margin: 15px 0px;
+}
+
+.actions{
+    margin-top: 375px;
+    width: 301px;
+}
+.actions h2 {
+    margin-bottom: 57px;
+    color: white;
+    padding-top: 87px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: -60px;
+}
+.actions .button {
+    text-decoration: none;
+    margin-left: 55px;
+    background-color: white;
+    color: blue;
+    border-radius: 30px;
+    padding: 17px 37px;
+    margin-left: -6px;
+}
+.is-outline {
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 13px 41px;
+    border-radius: 116px;
+    margin-left: -3px;
+    color: white;
+}
+
+
+.copyrights {
+    margin: 69px 55px;
+    display: inline-block;
+}
+.item {
+    display: grid;
+    width: 871px;
+    margin: 54px 1px 1px -240px;
+}
+.item.oo{
+    margin-left: -267px;
+}
+.footer-nav{
+    display: grid;
+    margin: -64px -87px;
+    margin-left: -75px;
+}
+.stories p{
+    width: 80%;
+    margin-left: 42px;
+}
+ }
+ 
+ p.heading-paragraph {
+    margin-left: 33px;
+ }
+
+
+ @media (min-width:553px)and (max-width:768px){
+    header img{
+        margin-left: 2px;
+    }
+   
+    nav.main-nav{
+       
+            margin-right: -21px;
+    }
+    .hero__image img {
+width: 100%;
+    }
+    .hero__desc h1{
+        font-size: 25px;
+    }
+    .hero .hero__desc {
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    .howItWorks{
+        display: flex;
+        flex-shrink: inherit;
+    }
+    .copyrights{
+        margin: 112px 11px;
+    }
+    
+
+    .hero__desc .button{
+        margin-left: 12px;
+    } 
+  
+    .widgets.is-searchResults {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .howItWorks h2{
+        margin-top: 303px
+    }
+    .widgets.is-howItWorks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .widget {
+        margin-bottom: 60px;
+    }
+    p.heading-paragraph {
+        width: 80%;
+        margin-left: 73px;
+    }
+    .stories .widgets{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .actions {
+        margin-bottom: 211px;
+        margin-top: 533px;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        margin: -172px 171px;
+        margin-right: -26px;
+    }
+    .item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -56px;
+    }
+    .item h5 {
+        display: inline-block;
+        text-align: -webkit-auto;
+        margin-top: -36px;
+        margin-left: 60px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    .item ul{
+        position: absolute;
+        list-style: none;
+        margin-left: 79px;
+    }
+}
+@media (min-width:769px)and (max-width:1000px){
+    .hero__image img {
+width: 100%;
+    }
+    .widgets.is-searchResults{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .howItWorks h2 {
+        display: inline-block;
+        margin-top: 241px;
+    }
+    .stories .widgets{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .actions{
+        margin-top: 355px;
+    }
+    /* .item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -56px;
+    } */
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        margin: -166px 124px;
+        margin-right: -12px;
+    }
+    
+.copyrights {
+    margin: 112px 8px;
+}
+}
+ /*
+---------------------------------------------- 
